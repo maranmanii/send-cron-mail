@@ -33,7 +33,7 @@ CREATE TABLE `register` (
   `last_name` varchar(100) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
   `phone` varchar(100) DEFAULT NULL,
-  `country` varchar(255) DEFAULT current_timestamp(),
+  `country` varchar(255) DEFAULT NULL,
   `sendmail` int(20) DEFAULT NULL,
   `created_time` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
