@@ -1,0 +1,208 @@
+#banner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#banner #banner-images {
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    z-index: -10;
+    filter: brightness(0.7) grayscale(0.6);
+    animation: banner-change 15s infinite ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+#banner #banner-images img {
+    width: 100vw;
+    object-fit: cover;
+}
+
+@keyframes banner-change{
+    0% {
+        right: -200vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    20.5% {
+        right: -200vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    22.5% {
+        right: -200vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    23% {
+        right: -100vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    25% {
+        right: -100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    45.5% {
+        right: -100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    47.5% {
+        right: -100vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    48% {
+        right: 0vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    50% {
+        right: 0vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    70.5% {
+        right: 0vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    72.5% {
+        right: 0vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    73% {
+        right: 100vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    75% {
+        right: 100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    95.5% {
+        right: 100vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+    97.5% {
+        right: 100vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    98% {
+        right: 200vw;
+        filter: brightness(0) grayscale(0.6);
+    }
+    100% {
+        right: 200vw;
+        filter: brightness(0.7) grayscale(0.6);
+    }
+}
+
+#banner h1 {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+    color: rgb(230,255,255);
+    text-shadow: 2px 2px 8px rgb(206, 206, 206);
+    animation: color-cycle 5s infinite ease-in-out;
+    color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    margin-top: -14px;
+    text-align: center;
+    width: 90%;
+}
+
+.wrapper{
+    max-width: 450px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 10px;
+}
+.wrapper .form_container{
+    background: #fff;
+    padding: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+.heading{
+    background: #015a80;
+    margin: -30px;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 35px;
+    padding: 10px;
+}
+.wrapper .form_container .form_item{
+    margin-bottom: 25px;
+}
+.form_wrap.fullname,
+.form_wrap.select_box{
+    display: flex;
+}
+.form_wrap.fullname .form_item,
+.form_wrap.select_box .form_item{
+    width: 50%;
+}
+.form_wrap.fullname .form_item:first-child,
+.form_wrap.select_box .form_item:first-child{
+    margin-right: 4%;
+}
+.wrapper .form_container .form_item label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form_item input[type="text"],
+.form_item input[type="email"],
+.form_item select{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 3px;
+}
+.form_item input[type="text"]:focus{
+    border-color: #6271f0;
+}
+.btn input[type="submit"]{
+    background: #1598d4;
+    border: 1px solid #1598d4;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.multiselect {
+    width: 200px;
+}
+  
+.selectBox {
+    position: relative;
+}
+  
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+  
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+  
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+  
+#checkboxes label {
+    display: block;
+}
+  
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}  
